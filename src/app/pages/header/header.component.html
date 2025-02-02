@@ -1,0 +1,115 @@
+<section class="bg-white p-5 rounded-xl mt-4">
+  <!-- header-sec -->
+  <section class="flex justify-between items-center mb-2">
+    <div class="flex items-center md:gap-x-5 gap-x-1">
+      <h1 class="font-bold md:text-[22px] text-[18px]">01012553148</h1>
+
+      <button
+        class="py-1 px-3 md:px-5 bg-botton text-white hover:bg-[rgb(58,144,124)] font-bold rounded-lg"
+      >
+        {{ "InUse" | translate }}
+      </button>
+    </div>
+    <div (click)="show(showList)" class="relative">
+      <i
+        class="fa-solid fa-ellipsis text-[25px] cursor-pointer hover:text-blue duration-75"
+      ></i>
+      <div
+        #showList
+        class="hidden w-40 h-20 p-4 text-center border-[1px] absolute bg-gray-50 end-1"
+      >
+        <div>
+          <i
+            class="fa-solid fa-xmark text-[18px] absolute start-1 top-1 cursor-pointer rounded-lg duration-[.2s] hover:text-red"
+          ></i>
+        </div>
+
+        <div class="mb-2 flex justify-center items-center gap-x-2">
+          <i class="fa-solid fa-pen text-gray-600"></i>
+
+          <p>تعديل الرقم</p>
+        </div>
+        <div class="text-red flex justify-center items-center gap-x-2">
+          <i class="fa-solid fa-link-slash"></i>
+          <p>الغاء التعين</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- body-sec -->
+  <section
+    (click)="hide(showList)"
+    class="grid grid-cols-2 gap-y-14 mt-10 sm:grid sm:grid-cols-2 md:grid-cols-4 md:gap-y-10 sm:gap-y-10 sm:mt-6"
+  >
+    <div
+      class="flex flex-col md:gap-y-3 gap-y-7 text-center md:border-e-0 border-e-[2px] border-gray-200"
+    >
+      <div class="border-e-[2px] border-gray-200">
+        <h1 class="text-gray-500 mb-2 font-semibold">
+          {{ "protocolName" | translate }}
+        </h1>
+        <h2>{{ dataHeader.protocolName | translate }}</h2>
+      </div>
+      <div class="border-e-[2px] border-gray-200">
+        <h1 class="text-gray-500 font-semibold">
+          {{ "DateOfLastShipment" | translate }}
+        </h1>
+        <h2>{{ dataHeader.dateOfcancellationOfAppointment | translate }}</h2>
+      </div>
+    </div>
+    <div class="flex flex-col gap-y-3 justify-center items-center text-center">
+      <div class="">
+        <h1 class="text-gray-500 mb-2 font-semibold">
+          {{ "State" | translate }}
+        </h1>
+        <div class="flex items-center justify-center">
+          <img class="w-[30px]" [src]="dataHeader.countryImage" alt="flag" />
+          <h2 class="sm:text-[15px]">{{ dataHeader.country | translate }}</h2>
+        </div>
+      </div>
+      <div class="border-gray-200">
+        <h1 class="text-gray-500 font-semibold">
+          {{ "CurrentBalance" | translate }}
+        </h1>
+        <h2>{{ dataHeader.numOfExtensions }}</h2>
+      </div>
+    </div>
+    <div
+      class="flex flex-col md:gap-y-2 gap-y-3 text-center md:border-e-[0] border-e-[2px] border-gray-200"
+    >
+      <div class="md:border-s-[2px] border-gray-200">
+        <h1 class="text-gray-500 mb-2 font-semibold">
+          {{ "CurrentCustomer" | translate }}
+        </h1>
+        <div class="flex justify-center items-center">
+          <img
+            [src]="dataHeader.currentClintImage"
+            class="md:w-10 w-5"
+            alt=""
+          />
+          <h2>{{ dataHeader.currentClint | translate }}</h2>
+        </div>
+      </div>
+      <div class="md:border-s-[2px] border-gray-200">
+        <h1 class="text-gray-500 font-semibold">
+          {{ "CurrentCustomerBalance" | translate }}
+        </h1>
+        <h2>{{ dataHeader.currentAccountUse }}</h2>
+      </div>
+    </div>
+    <div class="flex flex-col gap-y-3 text-center">
+      <div class="md:border-s-[2px] border-gray-200">
+        <h1 class="text-textColor mb-2 font-semibold">
+          {{ "NumberOfExtensions" | translate }}
+        </h1>
+        <h2>{{ dataHeader.numOfExtensions }}</h2>
+      </div>
+      <div class="md:border-s-[2px] border-gray-200">
+        <h1 class="text-textColor font-semibold">
+          {{ "TheBalanceUsedForTheNumberAsAwhole" | translate }}
+        </h1>
+        <h2>{{ dataHeader.allCurrentUse }}</h2>
+      </div>
+    </div>
+  </section>
+</section>

@@ -1,0 +1,8 @@
+.line::after {
+  content: "";
+  width: 55px;
+  height: 30px;
+  background-color: gray;
+  top: 1px;
+  right: 1px;
+}

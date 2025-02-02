@@ -1,0 +1,19 @@
+<div class="">
+  <section
+    class="flex justify-between items-center bg-white -mx-[1rem] p-3 rounded-lg"
+  >
+    <div class="flex gap-x-2 items-center">
+      <i
+        class="fa-solid fa-hashtag text-[20px] cursor-pointer text-blue bg-babyBlue p-2 rounded-md"
+      ></i>
+      <p>{{ "showNumber" | translate }}</p>
+    </div>
+    <i
+      class="fa-solid fa-xmark text-[18px] cursor-pointer bg-backGround px-[8px] py-1 rounded-lg duration-[.2s] hover:text-red"
+    ></i>
+  </section>
+  <app-header [dataHeader]="data"></app-header>
+
+  <app-table [dataTable]="data"></app-table>
+  <app-footer [footerData]="data"></app-footer>
+</div>

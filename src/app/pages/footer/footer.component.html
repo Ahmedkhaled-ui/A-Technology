@@ -1,0 +1,27 @@
+<section
+  class="bg-white md:p-5 p-3 mt-3 mb-5 rounded-lg flex gapx flex-row justify-between items-center"
+>
+  <div class="flex gap-x-2">
+    <img class="rounded-full w-[50px]" src="/download (1).png" alt="" />
+
+    <div class="text-end">
+      <h1 class="text-gray-500 font-semibold text-start">
+        {{ "CreatedBy" | translate }}
+      </h1>
+      <h1 class="text-start">
+        {{ footerData().responsibleForAppointment | translate }}
+      </h1>
+    </div>
+  </div>
+  <div>
+    <div>
+      <h1 class="text-gray-500 font-semibold text-end mb-1">
+        {{ "DateOfLastShipment" | translate }}
+      </h1>
+      <div class="flex gap-x-3">
+        <h2>{{ footerData().dateOfcancellationOfAppointment | translate }}</h2>
+        <h5>04:30</h5>
+      </div>
+    </div>
+  </div>
+</section>
