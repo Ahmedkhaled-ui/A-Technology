@@ -10,8 +10,7 @@ import { TranslatePipe, TranslateService } from '@ngx-translate/core';
 })
 export class HeaderComponent {
   @Input({ required: true }) dataHeader: Idata = {} as Idata;
-  translatedData: any = {}; // لحفظ البيانات المترجمة
-
+  translatedData: any = {};
   constructor(private translate: TranslateService) {}
 
   show(showList: HTMLDivElement): void {

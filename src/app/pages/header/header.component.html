@@ -18,20 +18,14 @@
         #showList
         class="hidden w-40 h-20 p-4 text-center border-[1px] absolute bg-gray-50 end-1"
       >
-        <div>
-          <i
-            class="fa-solid fa-xmark text-[18px] absolute start-1 top-1 cursor-pointer rounded-lg duration-[.2s] hover:text-red"
-          ></i>
-        </div>
-
         <div class="mb-2 flex justify-center items-center gap-x-2">
           <i class="fa-solid fa-pen text-gray-600"></i>
 
-          <p>تعديل الرقم</p>
+          <p>{{ "EditNumber" | translate }}</p>
         </div>
         <div class="text-red flex justify-center items-center gap-x-2">
           <i class="fa-solid fa-link-slash"></i>
-          <p>الغاء التعين</p>
+          <p>{{ "Cancel " | translate }}</p>
         </div>
       </div>
     </div>
@@ -44,13 +38,13 @@
     <div
       class="flex flex-col md:gap-y-3 gap-y-7 text-center md:border-e-0 border-e-[2px] border-gray-200"
     >
-      <div class="border-e-[2px] border-gray-200">
+      <div class="md:border-e-[2px] border-gray-200">
         <h1 class="text-gray-500 mb-2 font-semibold">
           {{ "protocolName" | translate }}
         </h1>
         <h2>{{ dataHeader.protocolName | translate }}</h2>
       </div>
-      <div class="border-e-[2px] border-gray-200">
+      <div class="md:border-e-[2px] border-gray-200">
         <h1 class="text-gray-500 font-semibold">
           {{ "DateOfLastShipment" | translate }}
         </h1>

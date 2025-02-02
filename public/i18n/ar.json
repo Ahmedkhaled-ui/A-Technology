@@ -28,5 +28,7 @@
   "APPOINTMENT_DATE": "20/5/2024",
   "CANCELLATION_DATE": "31/10/2026",
   "eg": "ج.م",
-  "RESPONSIBLE_PERSON": "عبد الرحيم إسماعيل"
+  "RESPONSIBLE_PERSON": "عبد الرحيم إسماعيل",
+  "EditNumber": "تعديل الرقم",
+  "Cancel ": "الغاء التعين"
 }
