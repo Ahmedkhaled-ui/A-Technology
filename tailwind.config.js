@@ -13,6 +13,10 @@ module.exports = {
         babyBlue: "rgba(62, 151, 255, .1)",
         red: "rgba(255, 75, 85, 1)",
       },
+      fontFamily: {
+        Poppins: ["Poppins", "sans-serif"],
+        Neo: ["Neo", "sans-serif"],
+      },
     },
   },
   plugins: [],

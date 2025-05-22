@@ -1,0 +1,120 @@
+<div class="bg-white p-3 border-[1px] border-[#ECF0F5] rounded-[6px] mt-2">
+  <div class="flex items-center gap-x-2 mb-5">
+    <span class="bg-[#6FC8FF1A] rounded-[4px] p-[4px]">
+      <svg
+        width="5"
+        height="10"
+        viewBox="0 0 5 10"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0 2C0 1.05719 0 0.585786 0.292893 0.292893C0.585786 0 1.05719 0 2 0H3C3.94281 0 4.41421 0 4.70711 0.292893C5 0.585786 5 1.05719 5 2V8C5 8.94281 5 9.41421 4.70711 9.70711C4.41421 10 3.94281 10 3 10H2C1.05719 10 0.585786 10 0.292893 9.70711C0 9.41421 0 8.94281 0 8V2Z"
+          fill="#40CDF4"
+        />
+      </svg>
+    </span>
+    <h1 class="font-Neo font-medium text-[12px] text-[#616776]">
+      بيانات التذكرة
+    </h1>
+  </div>
+  <form action="">
+    <div class="mb-5">
+      <label
+        for="base-input"
+        class="block mb-2 font-Neo font-medium text-[14px] text-[#7F7F7F]"
+        >أسم التذكرة</label
+      >
+      <input
+        type="text"
+        id="base-input"
+        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:outline-none block w-full p-2.5"
+      />
+    </div>
+    <div class="flex justify-between gap-x-2">
+      <div class="w-[50%]">
+        <label
+          for="base-input"
+          class="block mb-2 font-Neo font-medium text-[14px] text-[#7F7F7F]"
+        >
+          أولوية التذكرة</label
+        >
+        <select
+          id=""
+          class="bg-gray-50 border border-gray-300 rounded-lg focus:outline-none block w-full p-2.5"
+        >
+          <option
+            class="font-Neo font-medium text-[14px] text-[#1C1C28]"
+            selected
+          >
+            متوسطة
+          </option>
+          <option value="US">United States</option>
+          <option value="CA">Canada</option>
+          <option value="FR">France</option>
+          <option value="DE">Germany</option>
+        </select>
+      </div>
+      <div class="w-[50%]">
+        <label
+          for="base-input"
+          class="block mb-2 font-Neo font-medium text-[14px] text-[#7F7F7F]"
+        >
+          نوع التذكرة</label
+        >
+        <select
+          id="countries"
+          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:outline-none block w-full p-2.5"
+        >
+          <option
+            class="font-Neo font-medium text-[14px] text-[#1C1C28]"
+            selected
+          >
+            شكاوي التقنية
+          </option>
+          <option value="US">1</option>
+          <option value="CA">5</option>
+          <option value="FR">2</option>
+          <option value="DE">2</option>
+        </select>
+      </div>
+    </div>
+    <div class="w-[50%]">
+      <label
+        for="base-input"
+        class="block mb-2 mt-2 font-Neo font-medium text-[14px] text-[#7F7F7F]"
+      >
+        مسؤول التذكرة</label
+      >
+      <select
+        id="countries"
+        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:outline-none block w-full p-2.5"
+      >
+        <option
+          class="font-Neo font-medium text-[14px] text-[#1C1C28]"
+          selected
+        >
+          على أيمن
+        </option>
+        <option value="US">1</option>
+        <option value="CA">5</option>
+        <option value="FR">2</option>
+        <option value="DE">2</option>
+      </select>
+    </div>
+    <div class="w-full">
+      <label
+        for="base-input"
+        class="block mt-2 font-Neo font-medium text-[14px] text-[#7F7F7F]"
+      >
+        وصف التذكرة</label
+      >
+      <textarea
+        name="note"
+        class="w-full resize-none font-Neo font-bold leading-[25px] text-[12px] text-[#1C1C28] rounded-[6px] h-[55px] my-[6px] p-2 border-[.75px] border-[#D3D6DC] focus:outline-none"
+      >
+      </textarea>
+    </div>
+    <app-files></app-files>
+  </form>
+</div>
