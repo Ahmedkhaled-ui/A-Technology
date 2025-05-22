@@ -1,2 +1,24 @@
-<app-parent2></app-parent2>
-<!-- <app-bouns></app-bouns> -->
+<section
+  class="h-[100vh] relative w-full flex items-center justify-center gap-x-10"
+>
+  <button
+    (click)="showCall()"
+    class="bg-rose-500 py-1 px-4 text-white rounded-lg border-[1px] border-rose-900"
+  >
+    المكالمات
+  </button>
+  <button
+    (click)="showTicket()"
+    class="bg-cyan-600 py-1 px-4 text-white rounded-lg border-[1px] border-cyan-900"
+  >
+    حجز تذاكر
+  </button>
+
+  <div class="absolute top-1 shadow-xl">
+    @if (showPop) {
+    <app-child2 (close)="closePopupCall()"></app-child2>
+    } @if (showPopTicket) {
+    <app-bouns (close)="closePopup()"></app-bouns>
+    }
+  </div>
+</section>

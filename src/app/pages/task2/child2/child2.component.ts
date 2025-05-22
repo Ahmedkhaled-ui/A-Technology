@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, input, Input, Output, EventEmitter } from '@angular/core';
 import { RouterLinkActive } from '@angular/router';
 import { CalldetailesComponent } from '../components/calldetailes/calldetailes.component';
 import { CallnoteComponent } from '../components/callnote/callnote.component';
@@ -21,6 +21,11 @@ import { Calls } from '../../../shared/calls';
   styleUrl: './child2.component.css',
 })
 export class Child2Component {
+  @Output() close = new EventEmitter<void>();
+
+  handleClose() {
+    this.close.emit();
+  }
   callDetails: Calls = {
     number: '+2001012345678',
     name: 'أشرف محمد رزق',
